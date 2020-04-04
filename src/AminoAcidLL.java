@@ -271,43 +271,6 @@ class AminoAcidLL{
     // Update head_ref to point to sorted linked list
     return sortedAminoList;
 
-
-    /*
-    //Creates an array from the list
-    AminoAcidLL copy = inList;
-    AminoAcidLL[] array = new AminoAcidLL[inList.nodeCounter()];
-    array[0] = copy;
-    for(int i = 1; i < array.length; i++){
-      copy = copy.next;
-      array[i] = copy;
-    }
-
-    // Selection Sort
-    for (int i = 0; i < array.length-1; i++) {
-      // Find the minimum element in unsorted array
-      int min = i;
-      for (int j = i + 1; j < array.length; j++){
-        if (array[j].aminoAcid < array[min].aminoAcid){
-          min = j;
-        }
-      }
-      // Swap the elements
-      AminoAcidLL temp = array[min];
-      array[min] = array[i];
-      array[i] = temp;
-    }
-
-    //Connects the array back into a list
-    for(int i = 0; i < array.length-1;i++){
-      array[i].next = array[i+1];
-    }
-    array[array.length - 1].next = null;
-    head = array[0];
-
-    return head;
-
-
-     */
   }
 
 
